@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MellowKraft vs Shopify — Custom Ecommerce vs Platform Dependency | MellowKraft</title>
+  <meta name="description" content="MellowKraft vs Shopify: a head-to-head comparison on cost, flexibility, ownership, and scalability for Indian D2C brands. See exactly what changes when you move to a custom stack." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mellowkraft.com/vs/shopify/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mellowkraft.com/vs/shopify/" />
+  <meta property="og:title" content="MellowKraft vs Shopify — Own Your Commerce Stack" />
+  <meta property="og:description" content="A direct comparison of MellowKraft's custom commerce stack vs Shopify for Indian D2C brands at scale." />
+  <meta property="og:image" content="https://mellowkraft.com/images/og.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@mellowkraft" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #FFFACD; --surface: #F5F3EE; --text: #1A1A1A; --muted: #555555;
+      --border: #E8DCC8; --navy: #0A3448; --gold: #D4AF37;
+      --font-display: 'Playfair Display', serif; --font-main: 'Inter', sans-serif;
+    }
+    body { background: var(--bg); color: var(--text); font-family: var(--font-main); line-height: 1.7; }
+    a { color: var(--navy); text-decoration: none; }
+    a:hover { color: var(--gold); }
+    nav { background: var(--navy); padding: 0 5%; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .logo { font-family: var(--font-display); font-size: 1.3rem; color: #FFFACD; font-weight: 700; text-decoration: none; }
+    .nav-links { display: flex; gap: 2rem; }
+    .nav-links a { color: #FFFACD; opacity: 0.8; font-size: 0.9rem; }
+    .nav-links a:hover { opacity: 1; color: #FFFACD; }
+    /* Hero */
+    .hero { background: var(--navy); padding: 4.5rem 5% 3.5rem; text-align: center; }
+    .hero .eyebrow { font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); margin-bottom: 1rem; font-weight: 700; }
+    .hero h1 { font-family: var(--font-display); font-size: clamp(2rem, 5vw, 3.2rem); color: #FFFACD; line-height: 1.2; margin-bottom: 1.25rem; }
+    .hero p { color: #FFFACD; opacity: 0.75; max-width: 580px; margin: 0 auto 2rem; font-size: 1.05rem; }
+    .btn { display: inline-block; background: var(--gold); color: var(--navy); padding: 0.8rem 2.25rem; border-radius: 8px; font-weight: 700; font-size: 0.95rem; }
+    .btn:hover { opacity: 0.9; color: var(--navy); }
+    /* Container */
+    .container { max-width: 1000px; margin: 0 auto; padding: 3.5rem 5%; }
+    h2 { font-family: var(--font-display); font-size: 1.8rem; color: var(--navy); margin-bottom: 1.5rem; text-align: center; }
+    /* Comparison table */
+    .compare-wrap { overflow-x: auto; margin: 0 0 3rem; }
+    table { width: 100%; border-collapse: collapse; min-width: 600px; }
+    thead th { padding: 1rem; text-align: center; font-size: 1rem; }
+    thead th:first-child { text-align: left; }
+    thead .th-mellowkraft { background: var(--navy); color: #FFFACD; border-radius: 12px 12px 0 0; }
+    thead .th-shopify { background: var(--surface); color: var(--navy); border-radius: 12px 12px 0 0; }
+    thead .th-label { background: transparent; }
+    tbody tr { border-bottom: 1px solid var(--border); }
+    tbody tr:last-child { border-bottom: none; }
+    tbody td { padding: 0.85rem 1rem; font-size: 0.92rem; text-align: center; }
+    tbody td:first-child { text-align: left; font-weight: 600; color: var(--navy); }
+    .col-mellowkraft { background: rgba(10,52,72,0.04); }
+    .check { color: #2ecc71; font-size: 1.1rem; font-weight: 700; }
+    .cross { color: #e74c3c; font-size: 1.1rem; font-weight: 700; }
+    .partial { color: #f39c12; font-size: 0.85rem; }
+    /* Cost section */
+    .cost-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 3rem; }
+    .cost-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; }
+    .cost-card.highlight { background: var(--navy); color: #FFFACD; border-color: var(--navy); }
+    .cost-card h3 { font-family: var(--font-display); font-size: 1.25rem; margin-bottom: 1rem; }
+    .cost-card.highlight h3 { color: #FFFACD; }
+    .cost-row { display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+    .cost-card.highlight .cost-row { border-bottom-color: rgba(255,255,255,0.15); color: #FFFACD; }
+    .cost-row:last-child { border-bottom: none; font-weight: 700; }
+    .cost-row .amount { font-weight: 600; }
+    .cost-card.highlight .amount { color: var(--gold); }
+    .saving { text-align: center; margin: 1.5rem 0 3rem; }
+    .saving .number { font-family: var(--font-display); font-size: 2.5rem; color: var(--navy); font-weight: 700; }
+    .saving p { color: var(--muted); font-size: 0.95rem; }
+    /* Testimonial */
+    blockquote { background: var(--surface); border-left: 4px solid var(--gold); padding: 1.5rem 2rem; border-radius: 0 16px 16px 0; margin: 2rem 0; font-size: 1.05rem; font-style: italic; color: var(--text); }
+    blockquote cite { display: block; margin-top: 0.75rem; font-style: normal; font-size: 0.85rem; color: var(--muted); }
+    /* CTA */
+    .cta-band { background: var(--navy); padding: 4rem 5%; text-align: center; }
+    .cta-band h2 { color: #FFFACD; margin-bottom: 0.75rem; }
+    .cta-band p { color: #FFFACD; opacity: 0.75; max-width: 480px; margin: 0 auto 2rem; }
+    footer { background: var(--navy); color: #FFFACD; padding: 1.5rem 5%; text-align: center; font-size: 0.82rem; opacity: 0.7; }
+    @media (max-width: 640px) { .cost-grid { grid-template-columns: 1fr; } }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "MellowKraft vs Shopify",
+    "description": "A direct comparison of MellowKraft's custom commerce stack vs Shopify for Indian D2C brands — cost, flexibility, ownership, and scalability.",
+    "url": "https://mellowkraft.com/vs/shopify/",
+    "provider": { "@type": "Organization", "name": "MellowKraft", "url": "https://mellowkraft.com" }
+  }
+  </script>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="logo">MellowKraft</a>
+  <div class="nav-links">
+    <a href="/#why">Why Us</a>
+    <a href="/#services">Services</a>
+    <a href="/blog/">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <p class="eyebrow">Platform Comparison</p>
+  <h1>MellowKraft vs Shopify</h1>
+  <p>Shopify built a great platform for getting started. MellowKraft builds the platform you move to when Shopify becomes the constraint.</p>
+  <a href="/#contact" class="btn">See If You've Outgrown Shopify</a>
+</div>
+
+<div class="container">
+
+  <h2>Feature-by-Feature Comparison</h2>
+
+  <div class="compare-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th class="th-label"></th>
+          <th class="th-mellowkraft">MellowKraft Custom Stack</th>
+          <th class="th-shopify">Shopify (Advanced)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Transaction fees on revenue</td>
+          <td class="col-mellowkraft"><span class="check">✓ None</span></td>
+          <td><span class="cross">✗ 0.5% per order</span></td>
+        </tr>
+        <tr>
+          <td>Full data ownership</td>
+          <td class="col-mellowkraft"><span class="check">✓ Yours, always</span></td>
+          <td><span class="cross">✗ Shopify holds the keys</span></td>
+        </tr>
+        <tr>
+          <td>Custom checkout flow</td>
+          <td class="col-mellowkraft"><span class="check">✓ Any flow you design</span></td>
+          <td><span class="partial">Limited via Shopify Scripts</span></td>
+        </tr>
+        <tr>
+          <td>Multi-warehouse inventory</td>
+          <td class="col-mellowkraft"><span class="check">✓ Native</span></td>
+          <td><span class="partial">Multi-location via apps</span></td>
+        </tr>
+        <tr>
+          <td>Custom OMS rules</td>
+          <td class="col-mellowkraft"><span class="check">✓ Fully configurable</span></td>
+          <td><span class="cross">✗ Shopify's fixed logic</span></td>
+        </tr>
+        <tr>
+          <td>Direct Razorpay / PayU integration</td>
+          <td class="col-mellowkraft"><span class="check">✓ Native, no extra fees</span></td>
+          <td><span class="partial">Via app + transaction fee</span></td>
+        </tr>
+        <tr>
+          <td>WhatsApp commerce integration</td>
+          <td class="col-mellowkraft"><span class="check">✓ Clean API access</span></td>
+          <td><span class="partial">Third-party app required</span></td>
+        </tr>
+        <tr>
+          <td>Unified CRM + order history</td>
+          <td class="col-mellowkraft"><span class="check">✓ Single system</span></td>
+          <td><span class="partial">Requires external CRM app</span></td>
+        </tr>
+        <tr>
+          <td>Native GST invoicing</td>
+          <td class="col-mellowkraft"><span class="check">✓ Built-in</span></td>
+          <td><span class="partial">Third-party app required</span></td>
+        </tr>
+        <tr>
+          <td>Subscription / recurring billing</td>
+          <td class="col-mellowkraft"><span class="check">✓ Native</span></td>
+          <td><span class="partial">Third-party app + fees</span></td>
+        </tr>
+        <tr>
+          <td>Platform architecture freedom</td>
+          <td class="col-mellowkraft"><span class="check">✓ Unlimited</span></td>
+          <td><span class="cross">✗ Bound by Shopify's model</span></td>
+        </tr>
+        <tr>
+          <td>Price as revenue grows</td>
+          <td class="col-mellowkraft"><span class="check">✓ Fixed infra cost</span></td>
+          <td><span class="cross">✗ Scales with your revenue</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>The Real Cost at ₹1 Crore / Month GMV</h2>
+
+  <div class="cost-grid">
+    <div class="cost-card highlight">
+      <h3>MellowKraft Custom Stack</h3>
+      <div class="cost-row"><span>Infrastructure (hosting, CDN, DB)</span><span class="amount">₹25,000</span></div>
+      <div class="cost-row"><span>Payment gateway fees (Razorpay std)</span><span class="amount">₹1,80,000</span></div>
+      <div class="cost-row"><span>Platform transaction fee</span><span class="amount">₹0</span></div>
+      <div class="cost-row"><span>App fees</span><span class="amount">₹0</span></div>
+      <div class="cost-row"><span>Total monthly platform cost</span><span class="amount">₹2,05,000</span></div>
+    </div>
+    <div class="cost-card">
+      <h3>Shopify (Advanced Plan)</h3>
+      <div class="cost-row"><span>Subscription</span><span class="amount">₹22,000</span></div>
+      <div class="cost-row"><span>Payment gateway fees (Razorpay std)</span><span class="amount">₹1,80,000</span></div>
+      <div class="cost-row"><span>Shopify transaction fee (0.5%)</span><span class="amount">₹50,000</span></div>
+      <div class="cost-row"><span>Apps (loyalty, OMS, CRM, etc.)</span><span class="amount">₹40,000</span></div>
+      <div class="cost-row"><span>Total monthly platform cost</span><span class="amount">₹2,92,000</span></div>
+    </div>
+  </div>
+
+  <div class="saving">
+    <div class="number">₹10,44,000/yr</div>
+    <p>Annual savings by moving to a custom stack at ₹1 crore/month GMV — before accounting for performance and conversion improvements.</p>
+  </div>
+
+  <h2>What Doesn't Change</h2>
+
+  <p style="text-align:center; max-width:600px; margin:0 auto 2rem; color:var(--muted);">We get asked this a lot. Here's what stays exactly the same when you move to a custom stack:</p>
+
+  <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:1rem; margin-bottom:3rem;">
+    <div style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:1.25rem; text-align:center;">
+      <div style="font-size:1.5rem; margin-bottom:0.5rem;">🛒</div>
+      <strong style="display:block; color:var(--navy); margin-bottom:0.35rem;">Customer Experience</strong>
+      <p style="font-size:0.85rem; color:var(--muted); margin:0;">Customers see a storefront. It works faster, looks exactly how you designed it.</p>
+    </div>
+    <div style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:1.25rem; text-align:center;">
+      <div style="font-size:1.5rem; margin-bottom:0.5rem;">📦</div>
+      <strong style="display:block; color:var(--navy); margin-bottom:0.35rem;">Fulfilment Partners</strong>
+      <p style="font-size:0.85rem; color:var(--muted); margin:0;">Shiprocket, Delhivery, Ecom Express — all integrate natively, often better than Shopify apps.</p>
+    </div>
+    <div style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:1.25rem; text-align:center;">
+      <div style="font-size:1.5rem; margin-bottom:0.5rem;">💳</div>
+      <strong style="display:block; color:var(--navy); margin-bottom:0.35rem;">Payment Methods</strong>
+      <p style="font-size:0.85rem; color:var(--muted); margin:0;">UPI, cards, net banking, COD — all work. You just stop paying Shopify's cut on top.</p>
+    </div>
+  </div>
+
+  <blockquote>
+    "We were paying ₹80,000/month in Shopify transaction fees alone. The custom platform MellowKraft built paid for itself in the first year — and we finally have an OMS that actually matches how we fulfil orders."
+    <cite>— Founder, D2C Lifestyle Brand · ₹1.2Cr GMV/month</cite>
+  </blockquote>
+
+</div>
+
+<div class="cta-band">
+  <h2>Ready to Own Your Commerce Stack?</h2>
+  <p>Start with a free audit. We'll look at your current Shopify costs, your ops, and your roadmap — and tell you honestly whether a custom platform makes sense for you right now.</p>
+  <a href="/#contact" class="btn">Book a Free Audit</a>
+</div>
+
+<footer>
+  © 2025 MellowKraft. All rights reserved. &nbsp;·&nbsp; <a href="/" style="color:#FFFACD">mellowkraft.com</a>
+</footer>
+
+</body>
+</html>

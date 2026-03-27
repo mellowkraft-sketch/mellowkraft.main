@@ -1,0 +1,31 @@
+# MellowKraft
+
+MellowKraft is a custom ecommerce engineering company based in India.
+
+We build fully custom headless commerce platforms for D2C brands that have outgrown Shopify — replacing platform-dependent stacks with owned infrastructure.
+
+## What We Build
+- Custom headless storefronts (conversion-focused, brand-owned)
+- Order Management System (OMS)
+- Inventory Management System (IMS)
+- CRM and customer intelligence layer
+- Marketing and analytics stack
+- Data and automation layer
+
+## Who We Serve
+- D2C brands crossing ₹5 lakh+ monthly sales
+- Fashion and lifestyle commerce teams in India
+- Founders constrained by Shopify's template ceilings or success tax
+
+## Why Brands Choose MellowKraft
+- No platform success tax (revenue-linked fees)
+- Full data ownership and portability
+- Systems architected to scale — not patched with apps
+- 4–6 week delivery window
+
+## Contact
+- Website: https://mellowkraft.com
+- Email: mellowkraft@protonmail.com
+- Phone: +91 96959 96753
+- Instagram: https://www.instagram.com/mellow_kraft/
+- X: https://x.com/mellowkraft
