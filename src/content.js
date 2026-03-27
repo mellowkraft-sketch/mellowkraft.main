@@ -6,7 +6,7 @@ export const navLinks = [
   { label: 'Contact', href: '#contact' },
 ]
 
-export const heroWords = ['Shopify', 'the ordinary', 'managed platforms', 'limitations']
+export const heroWords = ['the competition', 'the ordinary', 'managed platforms', 'limitations']
 
 export const painPoints = [
   {

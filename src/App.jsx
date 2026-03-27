@@ -13,6 +13,7 @@ import {
 import { useScrollAnimations } from './animations/useScrollAnimations'
 import { trackEvent } from './lib/analytics'
 import { Instagram, Twitter } from 'lucide-react'
+import logo from './assets/logo.jpeg'
 
 const SolutionStackedCarousel = lazy(() => import('./components/SolutionStackedCarousel'))
 const ContactForm = lazy(() => import('./components/ContactForm'))
@@ -129,13 +130,13 @@ function App() {
               className="btn btn-secondary"
               onClick={() => trackEvent('cta_click', { cta_name: 'hero_read_growth_wall' })}
             >
-              Read the Shopify Growth Wall
+              Why Brands Outgrow Platforms
             </a>
           </div>
         </section>
 
         <section id="why" className="section">
-          <h2>Why Brands Outgrow Shopify</h2>
+          <h2>Why Brands Outgrow Managed Platforms</h2>
           <p className="section-intro">You are not failing. Your systems are hitting structural limits.</p>
           <div className="grid grid-2">
             {painPoints.map((item) => (
@@ -316,7 +317,9 @@ function App() {
       </main>
 
       <footer className="footer section">
-        <span className="logo">MellowKraft</span>
+        <a href="#hero" className="logo logo-img footer-logo">
+          <img src={logo} alt="MellowKraft" />
+        </a>
         <nav>
           <a href="#why">Why</a>
           <a href="#solution">Solution</a>

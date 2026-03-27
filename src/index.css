@@ -149,7 +149,7 @@ h3 {
   gap: 1rem;
   padding: 0.85rem 1.3rem;
   border: 1px solid rgba(13, 13, 13, 0.1);
-  background: rgba(13, 13, 13, 0.95);
+  background: #000000;
   backdrop-filter: blur(12px);
   border-radius: 16px;
   z-index: 20;
@@ -177,6 +177,43 @@ h3 {
 
 .navbar .logo {
   color: var(--header-text);
+}
+
+.navbar .logo-img {
+  padding: 0.5rem 0;
+  display: inline-flex;
+  align-items: center;
+  transition: opacity 260ms ease, transform 260ms ease;
+}
+
+.navbar .logo-img img {
+  height: 61px;
+  width: auto;
+  max-width: 154px;
+  display: block;
+  filter: invert(1);
+}
+
+.navbar .logo-img:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+}
+
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+  transition: opacity 260ms ease;
+}
+
+.footer-logo img {
+  height: 82px;
+  width: auto;
+  max-width: 202px;
+  display: block;
+}
+
+.footer-logo:hover {
+  opacity: 0.75;
 }
 
 .btn {
@@ -1110,7 +1147,7 @@ textarea[name='whyUs']::placeholder {
 .footer {
   padding-top: 3rem;
   border-top: 1px solid rgba(10, 10, 10, 0.14);
-  background: var(--bg);
+  background: #F5F5F5;
   color: var(--text);
   display: grid;
   gap: 1rem;

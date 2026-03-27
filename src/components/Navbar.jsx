@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { navLinks } from '../content'
+import logo from '../assets/logo.jpeg'
 
 function Navbar() {
   const [isVisible, setIsVisible] = useState(true)
@@ -59,7 +60,9 @@ function Navbar() {
   return (
     <>
       <header className={`navbar ${isVisible ? 'visible' : 'hidden'}`}>
-        <a href="#hero" className="logo">MellowKraft</a>
+        <a href="#hero" className="logo logo-img">
+          <img src={logo} alt="MellowKraft" />
+        </a>
         <nav>
           {navLinks.map((item) => (
             <a key={item.href} href={item.href}>{item.label}</a>

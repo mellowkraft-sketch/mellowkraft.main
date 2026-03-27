@@ -8,7 +8,7 @@ function ComparisonScrollSection() {
         <ContainerScroll
           titleComponent={
             <>
-              <h2 className="comparison-title">Shopify vs MellowKraft</h2>
+              <h2 className="comparison-title">Other Platforms vs MellowKraft</h2>
               <p className="comparison-subtitle">
                 A direct look at how platform dependence compares to a fully owned commerce architecture.
               </p>
@@ -18,7 +18,7 @@ function ComparisonScrollSection() {
           <div className="comparison-sheet">
             <div className="comparison-row comparison-head">
               <span>Dimension</span>
-              <span>Shopify</span>
+              <span>Other Platforms</span>
               <span>MellowKraft</span>
             </div>
             {comparisonRows.map((row) => (
@@ -32,8 +32,8 @@ function ComparisonScrollSection() {
         </ContainerScroll>
       </div>
 
-      <div className="comparison-mobile" aria-label="Shopify vs MellowKraft comparison table">
-        <h2 className="comparison-title">Shopify vs MellowKraft</h2>
+      <div className="comparison-mobile" aria-label="Other Platforms vs MellowKraft comparison table">
+        <h2 className="comparison-title">Other Platforms vs MellowKraft</h2>
         <p className="comparison-subtitle">
           A direct look at how platform dependence compares to a fully owned commerce architecture.
         </p>
@@ -42,7 +42,7 @@ function ComparisonScrollSection() {
             <thead>
               <tr>
                 <th scope="col">Dimension</th>
-                <th scope="col">Shopify</th>
+                <th scope="col">Other Platforms</th>
                 <th scope="col">MellowKraft</th>
               </tr>
             </thead>

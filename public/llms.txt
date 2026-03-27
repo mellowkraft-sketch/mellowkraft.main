@@ -2,7 +2,7 @@
 
 MellowKraft is a custom ecommerce engineering company based in India.
 
-We build fully custom headless commerce platforms for D2C brands that have outgrown Shopify — replacing platform-dependent stacks with owned infrastructure.
+We build high-converting web stores for small business owners and entrepreneurs — replacing platform-dependent stacks with fully owned infrastructure built to turn visitors into customers.
 
 ## What We Build
 - Custom headless storefronts (conversion-focused, brand-owned)
@@ -15,7 +15,7 @@ We build fully custom headless commerce platforms for D2C brands that have outgr
 ## Who We Serve
 - D2C brands crossing ₹5 lakh+ monthly sales
 - Fashion and lifestyle commerce teams in India
-- Founders constrained by Shopify's template ceilings or success tax
+- Small business owners and entrepreneurs ready to convert visitors to customers and own their commerce stack
 
 ## Why Brands Choose MellowKraft
 - No platform success tax (revenue-linked fees)
