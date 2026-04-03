@@ -8,9 +8,9 @@
     "build": "vite build && vite build --ssr src/entry-server.jsx --outDir dist/server && node scripts/prerender.mjs",
     "lint": "eslint .",
     "preview": "vite preview",
-    "pages:dev": "wrangler pages dev dist",
-    "pages:deploy": "npm run build && wrangler pages deploy dist --project-name mellowkraft-site --branch main",
-    "pages:deploy:preview": "npm run build && wrangler pages deploy dist --project-name mellowkraft-site --branch preview"
+    "pages:dev": "npx wrangler pages dev dist",
+    "pages:deploy": "npm run build && npx wrangler pages deploy dist --project-name mellowkraft-site --branch main",
+    "pages:deploy:preview": "npm run build && npx wrangler pages deploy dist --project-name mellowkraft-site --branch preview"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.4",
