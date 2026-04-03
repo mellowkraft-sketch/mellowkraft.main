@@ -68,6 +68,7 @@ function Navbar() {
             <a key={item.href} href={item.href}>{item.label}</a>
           ))}
         </nav>
+        <a href="https://store.mellowkraft.com/" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Store</a>
         <a href="#contact" className="btn btn-primary">Start a Project</a>
         <button
           type="button"
@@ -92,6 +93,9 @@ function Navbar() {
             {navLinks.map((item) => (
               <a key={item.href} href={item.href} onClick={closeMenu}>{item.label}</a>
             ))}
+            <a href="https://store.mellowkraft.com/" target="_blank" rel="noopener noreferrer" className="btn btn-secondary mobile-nav-cta" onClick={closeMenu}>
+              Store
+            </a>
             <a href="#contact" className="btn btn-primary mobile-nav-cta" onClick={closeMenu}>
               Start a Project
             </a>

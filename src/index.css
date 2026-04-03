@@ -1649,7 +1649,8 @@ select {
 }
 
 @media (max-width: 960px) {
-  .navbar > .btn-primary {
+  .navbar > .btn-primary,
+  .navbar > .btn-secondary {
     display: none;
   }
 
